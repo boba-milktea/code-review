@@ -6,6 +6,6 @@
  * @returns {Array} Returns the new array of filtered values.
  */
 
-export const difference = (array, values) => {
+export const difference = (array = [], values = []) => {
     return [...new Set(array.filter((item) => !values.includes(item)))];
 };

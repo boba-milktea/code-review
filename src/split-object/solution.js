@@ -6,7 +6,7 @@
 
  */
 
-export const splitObject = (toSeparate) => {
+export const splitObject = (toSeparate = {}) => {
     const arr = [];
     for (const key in toSeparate) {
         arr.push({ [key]: toSeparate[key] });
