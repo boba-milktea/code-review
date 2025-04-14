@@ -1,0 +1,24 @@
+{
+  "language": "en",
+  "words": [
+    "Nepo",
+    "Coverate",
+    "wireframe",
+    "lcov",
+    "Pellegrini",
+    "stackoverflow",
+    "Atlassian",
+    "vwell",
+    "projec",
+    "raddevon",
+    "sbor"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    "package.json",
+    "package-lock.json",
+    "**/*.mp4",
+    "**/*.svg",
+    "accessibility_report"
+  ]
+}
