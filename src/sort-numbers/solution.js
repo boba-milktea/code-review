@@ -1,11 +1,23 @@
-/** .........
- * Sum of two numbers.
+/**
+ * Sorts an array of numbers from smallest to largest to largest.
  *
- * @param {number} num1 - The first number to sum.
- * @param {number} num2 - The second number to sum.
- * @returns {number} The sum of num1 and num2.
+ * Returns a new array without modifying the original array.
+ *
+ * Does not need to support: NaN, Infinity, -Infinity.
+ *
+ * @param {number[]} [arrayOfNumbers=[]] - the array of numbers to sort
+ * @returns {number[]} a new array with the same numbers, but sorted
+ * @example
+ *
+ * sortNumbers([1.5, 1, -1.5, 0, -1]);
+ * // -> [-1.5, -1, 0, 1, 1.5]
  */
 
-export const solutionName = (num1, num2) => {
-    return num1 + num2;
+export const sortNumbers = (arrayOfNumbers) => {
+    const newArray = [...arrayOfNumbers];
+    newArray.sort((a, b) => a - b);
+
+    return newArray;
 };
+
+console.log(sortNumbers([1.5, 1, -1.5, 0, -1]));

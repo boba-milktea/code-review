@@ -7,8 +7,8 @@
     "lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe",
     "lint:ls": "ls-lint",
     "lint:md": "markdownlint --ignore node_modules --ignore docs --config ./.markdownlint.jsonc --fix ./ ",
-    "spell-check": "cspell  './**'",
-    "test": "jest --silent "
+    "spell-check": "cspell  \"**/*\"",
+    "test": "jest --coverage "
   },
   "type": "module",
   "repository": {

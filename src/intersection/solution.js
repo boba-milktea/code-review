@@ -1,11 +1,12 @@
-/** .........
- * Sum of two numbers.
+/**
+ * Creates an array of values that are in both the first and the second arrays.
  *
- * @param {number} num1 - The first number to sum.
- * @param {number} num2 - The second number to sum.
- * @returns {number} The sum of num1 and num2.
+ * @param {Array} [array=[]] - The array to inspect.
+ * @param {Array} [values=[]] - The values to include.
+ * @returns {Array} Returns the new array of filtered values.
  */
 
-export const solutionName = (num1, num2) => {
-    return num1 + num2;
+export const intersection = (array, values) => {
+    const set = new Set(values);
+    return [...new Set(array.filter((item) => set.has(item)))];
 };

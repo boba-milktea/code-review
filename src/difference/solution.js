@@ -1,11 +1,11 @@
-/** .........
- * Sum of two numbers.
+/**
+ * Creates an array of values that are in the first array, but not not in the second array.
  *
- * @param {number} num1 - The first number to sum.
- * @param {number} num2 - The second number to sum.
- * @returns {number} The sum of num1 and num2.
+ * @param {Array} [array=[]] - The array to inspect.
+ * @param {Array} [values=[]] - The values to exclude.
+ * @returns {Array} Returns the new array of filtered values.
  */
 
-export const solutionName = (num1, num2) => {
-    return num1 + num2;
+export const difference = (array, values) => {
+    return [...new Set(array.filter((item) => !values.includes(item)))];
 };
