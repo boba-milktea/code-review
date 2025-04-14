@@ -11,7 +11,6 @@
 
 export const deepFlat = (array = []) => array.flat(Infinity);
 
-console.log(deepFlat());
 /**
  * Use Recursion.
  */
