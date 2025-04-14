@@ -1,18 +1,19 @@
 /**
- * Converts a nested array into a single array with no nesting
+ * Converts a nested array into a single array with no nesting.
  *
  * @param {Array} [array=[]] - The array to flatten.
  * @returns {Array} Returns the new flattened array.
  */
 
 /**
- * Built-in method
+ * Use Built-in method.
  */
 
-export const deepFlat = (array) => array.flat(Infinity);
+export const deepFlat = (array = []) => array.flat(Infinity);
 
+console.log(deepFlat());
 /**
- * recursion
+ * Use Recursion.
  */
 
 // const deepFlat = (array = []) => {
